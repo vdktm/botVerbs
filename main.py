@@ -12,7 +12,7 @@ f = open('data/regular_verb.txt', 'r', encoding='UTF-8')
 regVerb = f.read().split('\n')
 f.close()
 
-bot = telebot.TeleBot('5205297356:AAEanCnLca5Z0_B28vHZg3eegifXpM4vZ8c')
+bot = telebot.TeleBot('token')
 
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
